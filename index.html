@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<body>
+    <h1 style="text-align: center;">点击灯泡可以打开或者关闭这盏灯</h1>
+    <div style="text-align: center;">
+        <img onclick="ChangeImage()"  src="pic_bulboff.gif" alt="灯泡关闭" width="200"height="300" id="bulb">
+    </div>
+    <script>
+        function ChangeImage(){
+            const bulb = document.getElementById("bulb");
+            if(bulb.src.includes("pic_bulboff.gif")){
+                bulb.src = "pic_bulbon.gif";
+            }else{
+                bulb.src = "pic_bulboff.gif";               
+            }
+        }
+    </script>
+</body>
+</html>
